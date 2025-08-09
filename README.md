@@ -11,15 +11,15 @@ This project implements an intelligent todo-list system that automatically extra
 
 ## Features
 
-Automatic Tagging: Classifies todos into categories using zero-shot classification
+**Automatic Tagging**: Classifies todos into categories using zero-shot classification
 
-Entity Recognition: Extracts persons, organizations, and event times using spaCy NER
+**Entity Recognition**: Extracts persons, organizations, and event times using spaCy NER
 
-Persistent Storage: SQLite database for saving todo records
+**Persistent Storage**: SQLite database for saving todo records
 
-Time Parsing: Smart time detection with dateparser library
+**Time Parsing**: Smart time detection with dateparser library
 
-Interactive CLI: User-friendly command-line interface
+**Interactive CLI**: User-friendly command-line interface
 
 
 
@@ -211,6 +211,7 @@ Commandline User Interface accepting Keyboard Input & give feedback
     SQLite3
 
     pytz
+
 
 
 
