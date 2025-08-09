@@ -169,15 +169,39 @@ Configurable confidence threshold
 ### Data Structure
 Todo records contain:
 
-Original text description
-Creation timestamp
-Predicted tags (e.g., sports, work, study)
-NER results:
-    Event time
-    Persons
-    Organizations
-    Events
-    Sample Output
+- Original text description
+- Creation timestamp
+- Predicted tags (e.g., sports, work, study)
+- NER results:
+    - Event time
+    - Persons
+    - Organizations
+    - Events
+    - Sample Output
+
+```json
+{
+  "original_text": "Meet John at Google HQ tomorrow at 3pm for product launch",
+  "creation_time": "2023-08-15 14:30:45 EDT-0400",
+  "candidate_labels": [
+    "sports",
+    "cooking",
+    "gaming",
+    "work",
+    "study",
+    "shopping"
+  ],
+  "predicted_tags": [
+    "work"
+  ],
+  "ner_results": {
+    "event_time": "2023-08-16 15:00",
+    "persons": [
+      "John"
+    ]
+  }
+}
+```
 
 ## Dependencies
     spaCy (with en_core_web_lg model)
@@ -186,6 +210,7 @@ NER results:
     SQLite3
 
     pytz
+
 
 
 
