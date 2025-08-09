@@ -16,13 +16,20 @@ Time Parsing: Smart time detection with dateparser library
 
 Interactive CLI: User-friendly command-line interface
 
-## Installation 
 
-    Copy the file to the colab and run all the code blocks
 
 ## Usage
 
-    Run the main application:
+### Online Links:
+
+[Google Drive Project](https://colab.research.google.com/drive/14PPYnla4JV2Hx4NyXgV3okiu_RSSfx8G?usp=drive_link)
+[Project Report](https://docs.google.com/document/d/1lCpltj8ZyvBaGT_qEkmrTGdMkzAHBK8j_JdrDlmmgWQ/edit?usp=sharing)
+
+### Installation 
+
+Copy the file to the colab and run all the code blocks
+
+Run the main application:
 
 <BASH>
     python main.py
@@ -172,4 +179,5 @@ Thank you for using our system. Goodbye!
     Transformers (Hugging Face)
     dateparser
     SQLite3
+
     pytz
