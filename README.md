@@ -31,65 +31,12 @@ Interactive CLI: User-friendly command-line interface
 
 Copy the file to the colab and run all the code blocks
 
-Run the main application:
-
-<BASH>
-    python main.py
-    The system provides these options:
-
+### Options:
 Add new todo item: Describe your task and the system will automatically analyze and tag it
 View history: Browse previously saved todo items with their metadata
 Exit system: Close the application
 
-## Workflow Overview
-**User Input:** Describe your todo item
-
-**Entity Extraction:**
-Detect persons, organizations, and time references
-Parse relative time expressions (e.g., "tomorrow at 3pm")
-
-**Tag Classification:**
-Assign relevant tags from predefined categories
-Uses zero-shot classification with BART-large model
-
-**Storage:**Save results to SQLite database
-
-**History View:**Retrieve and review past todo items
-
-## System Components
-
-### Core Modules
-
-**Database Manager** (DatabaseManager):
-
-Initialize an sqliteDB file in given google drive path, Handle SQLite database operations
-Stores todo records with original text, tags, and entities
-
-
-**NER Extractor (EnhancedNERExtractor):**
-
-Extracts named entities using spaCy
-Processes time expressions with dateparser
-Identifies persons, organizations, and events
-
-**Event Tagger (EventTagger):**
-
-Classifies text using zero-shot learning
-Supports multi-label tagging
-Configurable confidence threshold
-
-### Data Structure
-Todo records contain:
-
-Original text description
-Creation timestamp
-Predicted tags (e.g., sports, work, study)
-NER results:
-    Event time
-    Persons
-    Organizations
-    Events
-    Sample Output
+### Sample Output:
 
 ## Sample Comversation
 
@@ -175,6 +122,57 @@ Please select an option: 3
 
 Thank you for using our system. Goodbye!
 ```
+
+
+## Workflow Overview
+**User Input:** Describe your todo item
+
+**Entity Extraction:**
+Detect persons, organizations, and time references
+Parse relative time expressions (e.g., "tomorrow at 3pm")
+
+**Tag Classification:**
+Assign relevant tags from predefined categories
+Uses zero-shot classification with BART-large model
+
+**Storage:**Save results to SQLite database
+
+**History View:**Retrieve and review past todo items
+
+## System Components
+
+### Core Modules
+
+**Database Manager** (DatabaseManager):
+
+Initialize an sqliteDB file in given google drive path, Handle SQLite database operations
+Stores todo records with original text, tags, and entities
+
+
+**NER Extractor (EnhancedNERExtractor):**
+
+Extracts named entities using spaCy
+Processes time expressions with dateparser
+Identifies persons, organizations, and events
+
+**Event Tagger (EventTagger):**
+
+Classifies text using zero-shot learning
+Supports multi-label tagging
+Configurable confidence threshold
+
+### Data Structure
+Todo records contain:
+
+Original text description
+Creation timestamp
+Predicted tags (e.g., sports, work, study)
+NER results:
+    Event time
+    Persons
+    Organizations
+    Events
+    Sample Output
 
 ## Dependencies
     spaCy (with en_core_web_lg model)
