@@ -140,7 +140,7 @@ Parse relative time expressions (e.g., "tomorrow at 3pm")
 Assign relevant tags from predefined categories
 Uses zero-shot classification with BART-large model
 
-**Storage:**Save results to SQLite database
+**Storage:** The final result will been saved to SQLite database of the Google Drive
 
 **History View:**Retrieve and review past todo items
 
@@ -186,6 +186,7 @@ NER results:
     SQLite3
 
     pytz
+
 
 
 
