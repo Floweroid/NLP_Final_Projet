@@ -32,9 +32,9 @@ Interactive CLI: User-friendly command-line interface
 Copy the file to the colab and run all the code blocks
 
 ### Options:
-Add new todo item: Describe your task and the system will automatically analyze and tag it
-View history: Browse previously saved todo items with their metadata
-Exit system: Close the application
+1. Add new todo item: Describe your task and the system will automatically analyze and tag it
+2. View history: Browse previously saved todo items with their metadata
+3. Exit system: Close the application
 
 ### Sample Output:
 
@@ -181,4 +181,5 @@ NER results:
     SQLite3
 
     pytz
+
 
