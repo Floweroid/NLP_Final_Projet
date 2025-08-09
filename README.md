@@ -1,9 +1,9 @@
 # Final Project: Auto Tagger Todo-List DB Version 2
 
-> - Course: CIS468: Nature Language Process 
-> - Zekai Lin 
-> - Summer 2025
-> - Aug.9 2025
+> - Course: CIS468:Nature Language Process 
+> - Semester: Summer 2025
+> - Student: Zekai Lin 
+> - Date: Aug.9 2025
 
 ## Introduction
 
@@ -186,6 +186,7 @@ NER results:
     SQLite3
 
     pytz
+
 
 
 
