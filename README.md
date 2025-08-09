@@ -144,29 +144,7 @@ Uses zero-shot classification with BART-large model
 
 **History View:**Retrieve and review past todo items
 
-## System Components
-
-### Core Modules
-
-**Database Manager** (DatabaseManager):
-
-Initialize an sqliteDB file in given google drive path, Handle SQLite database operations
-Stores todo records with original text, tags, and entities
-
-
-**NER Extractor (EnhancedNERExtractor):**
-
-Extracts named entities using spaCy
-Processes time expressions with dateparser
-Identifies persons, organizations, and events
-
-**Event Tagger (EventTagger):**
-
-Classifies text using zero-shot learning
-Supports multi-label tagging
-Configurable confidence threshold
-
-### Data Structure
+## Data Structure
 Todo records contain:
 
 - Original text description
@@ -203,6 +181,25 @@ Todo records contain:
 }
 ```
 
+## System Components
+
+**Database Manager** (DatabaseManager):
+
+Initialize an sqliteDB file in given google drive path, Handle SQLite database operations
+Stores todo records with original text, tags, and entities
+
+**NER Extractor (EnhancedNERExtractor):**
+
+Extracts named entities using spaCy
+Processes time expressions with dateparser
+Identifies persons, organizations, and events
+
+**Event Tagger (EventTagger):**
+
+Classifies text using zero-shot learning
+Supports multi-label tagging
+Configurable confidence threshold
+
 ## Dependencies
     spaCy (with en_core_web_lg model)
     Transformers (Hugging Face)
@@ -210,6 +207,7 @@ Todo records contain:
     SQLite3
 
     pytz
+
 
 
 
