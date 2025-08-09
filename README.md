@@ -200,6 +200,10 @@ Classifies text using zero-shot learning
 Supports multi-label tagging
 Configurable confidence threshold
 
+**Commend line UI (TodoApp):**
+
+Commandline User Interface accepting Keyboard Input & give feedback
+
 ## Dependencies
     spaCy (with en_core_web_lg model)
     Transformers (Hugging Face)
@@ -207,6 +211,7 @@ Configurable confidence threshold
     SQLite3
 
     pytz
+
 
 
 
